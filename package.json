@@ -2,7 +2,7 @@
   "name": "vitest-runner-cmd",
   "displayName": "vitest-runner-cmd",
   "description": "run vitest using keyboard shortcut",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.95.0"
   },
@@ -13,10 +13,6 @@
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
-      {
-        "command": "vitest-runner-cmd.helloWorld",
-        "title": "Hello World"
-      },
       {
         "command": "vitest-runner-cmd.runVitest",
         "title": "Run Vitest"
