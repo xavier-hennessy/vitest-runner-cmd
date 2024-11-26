@@ -3,6 +3,7 @@
   "displayName": "vitest-runner-cmd",
   "description": "run vitest using keyboard shortcut",
   "version": "0.1.0",
+  "repository": "https://github.com/xavier-hennessy/vitest-runner-cmd.git",
   "engines": {
     "vscode": "^1.95.0"
   },
