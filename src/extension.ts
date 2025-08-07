@@ -23,7 +23,11 @@ export function activate(context: vscode.ExtensionContext) {
             const testName = findTestName(editor);
             const command = buildVitestCommand(filePath, testName);
 
-            const terminal = vscode.window.createTerminal('Vitest');
+            // Find existing terminal or create a new one
+            let terminal = vscode.window.terminals.find(t => t.name === 'Vitest');
+            if (!terminal) {
+                terminal = vscode.window.createTerminal('Vitest');
+            }
             terminal.show();
             terminal.sendText(command);
         }
